@@ -18,8 +18,8 @@ class FlaskTestCase(unittest.TestCase):
                                data={'image': (test_image_bin_string, 'sample_image_for_upload')})
 
             # test if content of an img sent via POST request is equal to the content of the img in response body
-            self.assertEqual(test_image_binary, resp.data)
-
+            # self.assertEqual(test_image_binary, resp.data)
+            self.assertEqual(1, 2)
         # close opened img
         test_image.close()
 
