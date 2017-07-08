@@ -23,8 +23,8 @@ class FlaskTestCase(unittest.TestCase):
                                data={'image': (test_image_bin_string_pass, 'sample_image_for_upload_success')})
 
             # test if content of an img sent via POST request is equal to the content of the img in response body
-            self.assertEqual(test_image_binary_pass, resp.data)
-            self.assertNotEqual(test_image_binary_fail, resp.data)
+            self.assertEqual(test_image_binary_pass, resp.data, 'Something went wrong! Images should match.')
+            self.assertNotEqual(test_image_binary_fail, resp.data, 'Something went wrong! Images shouldn\'t match.')
 
     @classmethod
     def tearDownClass(cls):
