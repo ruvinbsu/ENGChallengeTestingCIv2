@@ -14,7 +14,7 @@ python image_upload.py
 ```
 or you can make use of gunicorn (WSGI server) that we installed in previous step: 
 ```sh
-web: gunicorn image_upload:app --log-file=-
+gunicorn image_upload:app --log-file=-
 ```
 
 ## How to connect a repository to Travis CI:
