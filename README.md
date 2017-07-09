@@ -27,7 +27,7 @@ python image_upload.py
 or you can make use of gunicorn (WSGI server) that we installed in previous step: 
 ```sh
 web: gunicorn image_upload:app --log-file=-
-``
+```
 
 
 #### Application has been deployed to heroku and can be accessed from [here](https://desolate-inlet-44457.herokuapp.com/).
