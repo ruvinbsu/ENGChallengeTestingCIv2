@@ -1,0 +1,14 @@
+h1 {
+    color: #484343;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+input {
+    cursor: pointer;
+}
+
+.file-select {
+    color: #ff007d;
+}
